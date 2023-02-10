@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Jura } from '@next/font/google'
+import Link from 'next/link';
 
 const jura = Jura({
   weight: ['300', '400', '500', '600', '700'],
@@ -17,18 +18,35 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={"w-full bg-regal-black h-screen"}>
-        <header className='flex pl-5 pr-5 pt-10 justify-around'>
-          <h1 className={`${jura.variable} font-sans text-r-white text-lg lg:text-4xl`}>SATURN</h1>
+        <header className='flex pl-5 pr-5 pt-10 justify-around h-[10vh]'>
+          <h1 className={`${jura.variable} font-sans text-r-white text-lg lg:text-4xl hover:text-space-purp`}>SATURN</h1>
           <div className='flex w-2/4 justify-center space-x-10'>
-            <a className={`${jura.variable} font-sans text-r-white/75 hover:text-r-white lg:text-2xl`}>Home</a>
-            <a className={`${jura.variable} font-sans text-r-white/75 hover:text-r-white lg:text-2xl`}>Rockets</a>
+            <Link href={"/"} className={`${jura.variable} font-sans text-r-white/75 hover:text-space-purp lg:text-2xl font-light`}>Home</Link>
+            <Link href={"/rockets"}  className={`${jura.variable} font-sans text-r-white/75 hover:text-space-purp lg:text-2xl font-light`}>Rockets</Link>
           </div>
-          <button className='border-solid border-2 border-r-white/75 rounded-2xl text-r-white/75 hover:text-r-white hover:border-r-white lg:text-2xl'>
-            <a className={`${jura.variable} font-sans py-10 px-5 lg:py-20`}>Review Rockets</a>
-          </button>      
+            <button className='border-solid border border-space-purp/80 rounded-2xl text-space-purp/80 hover:text-space-purp hover:border-space-purp lg:text-1xl '>
+              <Link href={"/rockets"} className={`${jura.variable} font-sans py-10 px-5 lg:py-20`}>Review Rockets</Link>
+            </button> 
         </header>
-        <div>
-
+        <div className='flex flex-col bg-[url(/saturn.jpg)] h-[90vh] w-full pl-20 pr-20'>
+          <div className='flex flex-col w-[50vw] h-[60vh] justify-center'>
+            <h2 className={`${jura.variable} font-sans text-r-white text-lg lg:text-9xl`}>SATURN</h2>
+            <p className={`${jura.variable} font-sans text-r-white/70 text-lg lg:text-4xl font-light`}>A tour of the new rockets available for review an exhibition unlike anything you've ever seen....</p>
+          </div>
+          <div className='flex w-full h-[30vh] justify-around'>
+            <div className='flex flex-col w-[20vw]'>
+              <h3 className={`${jura.variable} font-sans text-space-purp text-lg lg:text-3xl `}>Review</h3>
+              <p className={`${jura.variable} font-sans text-r-white/75 text-lg lg:text-1xl font-light`}>You can review the rockets we posses check put their attributes an their unique interactions</p>
+            </div>
+            <div className='flex flex-col w-[20vw]'>
+              <h3 className={`${jura.variable} font-sans text-space-purp text-lg lg:text-3xl `}>Create</h3>
+              <p className={`${jura.variable} font-sans text-r-white/75 text-lg lg:text-1xl font-light`}>Create new rockets add the necesary information to the rocket so you are able to create them in a whole new way</p>
+            </div>
+            <div className='flex flex-col w-[20vw]'>
+              <h3 className={`${jura.variable} font-sans text-space-purp text-lg lg:text-3xl `}>Edit</h3>
+              <p className={`${jura.variable} font-sans text-r-white/75 text-lg lg:text-1xl font-light`}>You can change how the rockets function begin by changing some of their attributes and see the final result!</p>
+            </div>
+          </div>
         </div>
       </main>
     </>

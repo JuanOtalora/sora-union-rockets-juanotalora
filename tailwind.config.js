@@ -17,6 +17,8 @@ module.exports = {
         'r-white': '#FEF5EF',
         'dark-brown': '#44231A',
         'mid-brown': '#6B402D',
+        'space-purp': '#5643fd',
+        'space-pink': '#7649fe',
       },
       screens: {
         'sm': '640px',
