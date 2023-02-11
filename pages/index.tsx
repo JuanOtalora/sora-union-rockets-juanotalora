@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Jura } from '@next/font/google'
 import Link from 'next/link';
 
