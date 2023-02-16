@@ -30,7 +30,7 @@ export default function Home() {
         <div className='flex flex-col bg-[url(/saturn.jpg)] h-[90vh] w-full pl-20 pr-20'>
           <div className='flex flex-col w-[50vw] h-[60vh] justify-center'>
             <h2 className={`${jura.variable} font-sans text-r-white text-lg lg:text-9xl`}>SATURN</h2>
-            <p className={`${jura.variable} font-sans text-r-white/70 text-lg lg:text-4xl font-light`}>A tour of the new rockets available for review an exhibition unlike anything you've ever seen....</p>
+            <p className={`${jura.variable} font-sans text-r-white/70 text-lg lg:text-4xl font-light`}>A tour of the new rockets available for review an exhibition unlike anything you&apos;ve ever seen....</p>
           </div>
           <div className='flex w-full h-[30vh] justify-around'>
             <div className='flex flex-col w-[20vw]'>

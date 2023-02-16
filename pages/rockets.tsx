@@ -239,7 +239,7 @@ export default function Rockets() {
                                                 </div>
                                             </div>
                                             <div className='flex justify-around py-2'>
-                                                <a  target="_blank" href={rocket.user.html_url} className='justify-center w-full flex py-2 px-4  space-x-1 items-center border-solid border border-space-purp/80 rounded-2xl text-space-purp/80 hover:text-space-purp hover:border-space-purp'>
+                                                <a rel="noreferrer"  target="_blank" href={rocket.user.html_url} className='justify-center w-full flex py-2 px-4  space-x-1 items-center border-solid border border-space-purp/80 rounded-2xl text-space-purp/80 hover:text-space-purp hover:border-space-purp'>
                                                     <p className={`${jura.variable} font-sans  text-m `}>Visit</p>
                                                 </a>
                                             </div>
