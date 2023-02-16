@@ -1,4 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Saturn
+
+Project Saturn is a small webapp created using Next.js, whose purpose is as small test for Sora Union. The App has a small landing page where you can redirect to the rocket page; where you can create, edit and delete new rockets.
+
+## Tech Stack
+
+**Client:** Next.JS, Axios, TailwindCSS, React-select, use-local-storage-state
+
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Regal Black | ![#010101](https://via.placeholder.com/10/0a192f?text=+) #010101 |
+| Regal White | ![#FEF5EF](https://via.placeholder.com/10/f8f8f8?text=+) #FEF5EF |
+| Space Purple | ![#5643fd](https://via.placeholder.com/10/00b48a?text=+) #5643fd |
+
+## Demo
+
+https://sora-union-rockets-juanotalora-a64zonb3d-juanotalora.vercel.app
+
+
+## Lessons Learned
+
+What did you learn while building this project? What challenges did you face and how did you overcome them?
+
+I was able to learn both Next.JS and Tailwind as both were new techs I had heard but never tried before!
 
 ## Getting Started
 
